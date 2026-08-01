@@ -1,6 +1,7 @@
 # Enterprise Campus Network Design
 
-Diseño e implementación de una red empresarial multisede con VLAN, OSPF, redundancia, VPN IPsec, NAT/PAT, servicios de red y controles de seguridad en Cisco Packet Tracer.
+Proyecto personal de diseño e implementación de una infraestructura
+de red empresarial multisede desarrollada en Cisco Packet Tracer.
 
 ## Descripción del proyecto
 
