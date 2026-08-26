@@ -178,7 +178,7 @@ Las pruebas realizadas confirmaron la conectividad entre las diferentes áreas d
   
 - Plan de direccionamiento IP.
 
-  ![Plan de direccionamiento IP](docs/Plan_Direccionamiento_Enterprise_Campus_Final.xlsx)
+  ![Plan de direccionamiento IP](docs/Plan_Direccionamiento_Enterprise_Campus_Final.xlsm)
   
 - Capturas de las pruebas realizadas.
 
