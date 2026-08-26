@@ -135,7 +135,7 @@ Entre las principales pruebas realizadas se encuentran:
 
 Se verificó la formación correcta de adyacencias OSPF entre los dispositivos de capa 3, comprobando que los vecinos se encuentren en estado FULL.
 
-![Vecinos OSPF](images/02_ospf_neighbors.png)
+![Vecinos OSPF](images/02_ospf_neighbor.png)
 
 #### VPN IPsec site-to-site
 
@@ -147,17 +147,17 @@ Se validó el establecimiento del túnel VPN IPsec entre CE3 y CE4 mediante el e
 
 Se implementó una ACL extendida para restringir el acceso de los usuarios al DB Server 10.37.2.101, permitiendo únicamente el tráfico autorizado.
 
-![ACL DB Server](images/06_acl_db_server.png)
+![ACL DB Server](images/07_acl_db_server.png)
 
 #### Redundancia y reconvergencia
 
 Se realizaron pruebas de falla de enlaces para comprobar que OSPF reconverja automáticamente y mantenga la conectividad mediante caminos alternativos.
 
-![Reconvergencia OSPF](images/08a_redundancia_ospf.png)
+![Reconvergencia OSPF](images/09a_prueba_redundancia.png)
 
 La conectividad se mantuvo durante la caída del enlace, validando el funcionamiento del camino redundante.
 
-![Conectividad durante la falla](images/08b_redundancia_ping.png)
+![Conectividad durante la falla](images/09b_prueba_redundancia.png)
 
 ## Resultados
 
