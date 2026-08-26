@@ -11,16 +11,26 @@ La red fue diseñada para proporcionar segmentación, conectividad, seguridad, a
 
 ## Arquitectura de la red
 
-La topología está formada por:
+La topología fue diseñada con una arquitectura empresarial multisede, separando la infraestructura en diferentes bloques funcionales para facilitar la administración, escalabilidad y redundancia.
 
-- Sede principal con switches de acceso, distribución y núcleo.
-- Áreas de Contabilidad, Marketing, Recursos Humanos y Logística.
-- Sucursal remota con Ventas, Tesorería y servidores internos.
-- Centro de datos con servidores públicos y privados.
-- Red Metro Ethernet para conectar la sede con la sucursal.
-- ISP redundante compuesto por tres routers.
-- Oficina SOHO con conectividad inalámbrica.
-- Empresa externa y servidores públicos simulados.
+La solución está compuesta por:
+
+- Sede principal, con switches de acceso, distribución y núcleo.
+- Áreas de usuarios para Contabilidad, Marketing, Recursos Humanos y Logística.
+- Sucursal remota, con las áreas de Ventas, Tesorería y servidores internos.
+- Centro de datos remoto, dividido entre servidores públicos y servidores privados.
+- Red Metro Ethernet, utilizada para conectar la sede principal con la sucursal remota.
+- ISP redundante, compuesto por tres routers interconectados mediante OSPF.
+- Oficina SOHO, con conectividad cableada e inalámbrica.
+- Empresa externa simulada, utilizada para validar conectividad hacia servicios externos.
+
+### Topología implementada
+
+La siguiente imagen muestra la arquitectura general implementada en Cisco Packet Tracer:
+
+![Topología completa](images/01_topologia_completa.png)
+
+La infraestructura utiliza enlaces redundantes en diferentes segmentos de la red con el objetivo de mantener la conectividad ante la caída de enlaces principales.
 
 ## Tecnologías implementadas
 
