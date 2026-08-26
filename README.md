@@ -111,6 +111,10 @@ Se configuraron y validaron los siguientes servicios:
 
 ## Pruebas realizadas
 
+Durante la implementación se realizaron pruebas de conectividad, enrutamiento, seguridad, servicios y redundancia para validar el correcto funcionamiento de la infraestructura.
+
+Entre las principales pruebas realizadas se encuentran:
+
 - Comunicación entre VLAN.
 - Acceso a servicios internos y externos.
 - Resolución de nombres DNS.
@@ -124,6 +128,36 @@ Se configuraron y validaron los siguientes servicios:
 - Redundancia del centro de datos.
 - Validación de RSTP y port-security.
 - Acceso remoto mediante SSH.
+
+### Evidencias
+
+#### OSPF y enrutamiento dinámico
+
+Se verificó la formación correcta de adyacencias OSPF entre los dispositivos de capa 3, comprobando que los vecinos se encuentren en estado FULL.
+
+![Vecinos OSPF](images/02_ospf_neighbors.png)
+
+#### VPN IPsec site-to-site
+
+Se validó el establecimiento del túnel VPN IPsec entre CE3 y CE4 mediante el estado QM_IDLE, además de pruebas de conectividad entre la red corporativa y los servidores privados del centro de datos.
+
+![VPN IPsec](images/03_vpn_ipsec_qm_idle.png)
+
+#### Seguridad mediante ACL
+
+Se implementó una ACL extendida para restringir el acceso de los usuarios al DB Server 10.37.2.101, permitiendo únicamente el tráfico autorizado.
+
+![ACL DB Server](images/06_acl_db_server.png)
+
+#### Redundancia y reconvergencia
+
+Se realizaron pruebas de falla de enlaces para comprobar que OSPF reconverja automáticamente y mantenga la conectividad mediante caminos alternativos.
+
+![Reconvergencia OSPF](images/08a_redundancia_ospf.png)
+
+La conectividad se mantuvo durante la caída del enlace, validando el funcionamiento del camino redundante.
+
+![Conectividad durante la falla](images/08b_redundancia_ping.png)
 
 ## Resultados
 
