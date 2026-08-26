@@ -173,8 +173,17 @@ Las pruebas realizadas confirmaron la conectividad entre las diferentes áreas d
 ## Archivos del proyecto
 
 - Topología de Cisco Packet Tracer.
+  
+  ![Topología final de Cisco Packet Tracer](packet-tracer/Enterprise_Campus_Network_Final.pkt)
+  
 - Plan de direccionamiento IP.
+
+  ![Plan de direccionamiento IP](docs/Plan_Direccionamiento_Enterprise_Campus_Final.xlsx)
+  
 - Capturas de las pruebas realizadas.
+
+  ![Evidencias de las pruebas](images/)
+
 - Configuraciones principales de routers y switches.
 - Informe técnico del proyecto.
 
